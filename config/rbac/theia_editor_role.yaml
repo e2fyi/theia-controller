@@ -1,0 +1,24 @@
+# permissions for end users to edit theia.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: theia-editor-role
+rules:
+- apiGroups:
+  - e2.fyi.e2.fyi
+  resources:
+  - theia
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - e2.fyi.e2.fyi
+  resources:
+  - theia/status
+  verbs:
+  - get
