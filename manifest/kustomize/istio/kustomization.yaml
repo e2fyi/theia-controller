@@ -1,0 +1,13 @@
+
+namespace: theia-system
+
+bases:
+- ../../../config/default
+
+patchesStrategicMerge:
+- patches.yaml
+
+images:
+- name: controller:latest
+  newName: e2fyi/theia-controller
+  newTag: latest

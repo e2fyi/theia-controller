@@ -1,0 +1,19 @@
+apiVersion: e2.fyi/v1alpha1
+kind: Theia
+metadata:
+  name: my-theia
+spec:
+  template:
+    metadata:
+      annotations:
+        sidecar.istio.io/inject: "true"
+    spec:
+      containers:
+      - name: theia
+        image: theiaide/theia:latest
+    pvc:
+      accessModes: [ "ReadWriteOnce" ]
+      storageClassName: standard
+      resources:
+        requests:
+          storage: 250Mi

@@ -1,0 +1,6 @@
+repo: theia-controller
+resources:
+- group: e2.fyi
+  kind: Theia
+  version: v1alpha1
+version: "2"

@@ -1,0 +1,7 @@
+apiVersion: e2.fyi/v1alpha1
+kind: Theia
+metadata:
+  name: theia-sample
+spec:
+  # Add fields here
+  foo: bar
