@@ -1,0 +1,10 @@
+
+namespace: theia-system
+
+bases:
+- ../../../config/default
+
+images:
+- name: controller:latest
+  newName: e2fyi/theia-controller
+  newTag: latest
